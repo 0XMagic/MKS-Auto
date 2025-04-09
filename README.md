@@ -15,3 +15,4 @@
 
 #### Notes:
 * Files are sorted alphabetically, so make sure they are named correctly to prevent your sequence from being out of order.
+* You DO NOT have to credit me if you use this script to make workshop items.
