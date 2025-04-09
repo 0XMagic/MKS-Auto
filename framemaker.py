@@ -6,7 +6,7 @@ class File:
 
 	def __init__(self, filepath: str):
 		self.file = filepath.replace("\\", "/").split("/")[-1]
-		self.category = self.file.split(self.CATEGORY_SPLITTER)[0]
+		self.category = self.file.split(self.CATEGORY_SPLITTER)[0] if self.CATEGORY_SPLITTER in self.file else ""
 
 
 files = sorted([File(x) for x in sys.argv[1:] if x.lower().endswith(".tga")], key = lambda k: k.file)
