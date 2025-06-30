@@ -91,4 +91,4 @@ shutil.move(output_tga, copy_dir)
 
 output_sht = f"{copy_dir}/{output_sht}"
 
-subprocess.Popen(str(vtex_dir) + f" -game \"{str(tf_dir / 'tf')}\" \"" + output_sht + "\"")
+subprocess.call(str(vtex_dir) + f" -nopause -game \"{str(tf_dir / 'tf')}\" \"" + output_sht + "\"")
